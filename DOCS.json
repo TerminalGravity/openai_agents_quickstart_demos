@@ -1,0 +1,37 @@
+{
+  "openai_resources": {
+    "official_documentation": "https://platform.openai.com/docs/guides/agents-sdk",
+    "github_repositories": {
+      "openai_agents_python": "https://github.com/openai/openai-agents-python",
+      "openai_python": "https://github.com/openai/openai-python"
+    },
+    "api_reference": "https://platform.openai.com/docs/api-reference/agents"
+  },
+  "third_party_tools": {
+    "langchain": {
+      "website": "https://www.langchain.com/",
+      "github": "https://github.com/langchain-ai/langchain",
+      "agents_docs": "https://python.langchain.com/docs/modules/agents/"
+    },
+    "llamaindex": {
+      "website": "https://www.llamaindex.ai/",
+      "github": "https://github.com/jerryjliu/llama_index",
+      "agents_docs": "https://docs.llamaindex.ai/en/stable/module_guides/deploying/agents/root.html"
+    },
+    "autogen": {
+      "website": "https://microsoft.github.io/autogen/",
+      "github": "https://github.com/microsoft/autogen",
+      "agents_docs": "https://microsoft.github.io/autogen/docs/Use-Cases/agent_chat"
+    }
+  },
+  "tutorials_and_guides": {
+    "openai_cookbook": "https://cookbook.openai.com/",
+    "build_agents_with_openai": "https://platform.openai.com/docs/tutorials/build-agents-with-openai",
+    "assistant_api_quickstart": "https://platform.openai.com/docs/assistants/overview"
+  },
+  "community_resources": {
+    "openai_forum": "https://community.openai.com/",
+    "huggingface_spaces": "https://huggingface.co/spaces",
+    "paperswithcode": "https://paperswithcode.com/task/agents"
+  }
+} 

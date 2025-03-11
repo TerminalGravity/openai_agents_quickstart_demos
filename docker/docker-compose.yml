@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  use_case_1:
+    build:
+      context: ..
+      dockerfile: docker/use_case_1/Dockerfile
+    container_name: openai_agents_use_case_1
+    env_file:
+      - ../.env
+    volumes:
+      - ../examples/use_case_1:/app/use_case_1
+    ports:
+      - "5001:5000"
+    command: python use_case_1/src/main.py
+
+  use_case_2:
+    build:
+      context: ..
+      dockerfile: docker/use_case_2/Dockerfile
+    container_name: openai_agents_use_case_2
+    env_file:
+      - ../.env
+    volumes:
+      - ../examples/use_case_2:/app/use_case_2
+    ports:
+      - "5002:5000"
+    command: python use_case_2/src/main.py
+
+  # Jupyter service for interactive notebook usage
+  jupyter:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.base
+    container_name: openai_agents_jupyter
+    env_file:
+      - ../.env
+    volumes:
+      - ../notebooks:/app/notebooks
+      - ../examples:/app/examples
+    ports:
+      - "8888:8888"
+    command: jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password='' notebooks/ 
