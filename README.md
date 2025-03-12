@@ -25,7 +25,8 @@ openai_agents_quickstart/
 
 ### Prerequisites
 
-- Python 3.8 or higher
+- Python 3.11 or higher
+   - poetry or uv recomended over pip :D
 - pip (Python package installer)
 
 ### Setting Up the Environment
